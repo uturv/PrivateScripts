@@ -21,7 +21,7 @@ end
 local function trollageTextGUIs()
     local textGUIs = getTextGUIs()
     for _, textGUI in ipairs(textGUIs) do
-        textGUI.Text = "chipman"
+        textGUI.Text = "chip man"
     end
 end
 
@@ -36,11 +36,11 @@ while true do
         
         if (v:IsA("TextLabel") or v:IsA("TextButton")) and not v:GetFullName():find("ChatChannelParentFrame") then
             if v.Text ~= "" then
-                v.Text = "chipman"
+                v.Text = "chip man"
             end
             v:GetPropertyChangedSignal("Text"):Connect(function()
                 if v.Text ~= "" then
-                    v.Text = "chipman"
+                    v.Text = "chip man"
                 end
             end)
         end
